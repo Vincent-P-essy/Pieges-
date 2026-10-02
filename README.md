@@ -3,15 +3,14 @@
 Projet de jeu de stratégie multi-joueur « Pièges ! » (Stay Alive!)  
 Développé en Python dans le cadre du TP/DM sur les interfaces texte et graphique.
 
-<!-- execution-capture -->
-## Execution preview
 
-![Pieges-](docs/screenshots/game.png)
+## Gameplay
 
-![Pieges-](docs/screenshots/execution.png)
+![Placement des billes par les deux joueurs](docs/screenshots/marble-placement.png)
 
-The actual seeded game board logic, followed by a headless start of the Tk interface. This checks rendering and board initialization, not a complete multiplayer match. [Verification](docs/verification.md).
-<!-- /execution-capture -->
+![Manipulation des tirettes pendant une partie](docs/screenshots/sliding-bars.png)
+
+Captures de la fenêtre du jeu après placement des billes et manipulation des tirettes par les commandes de l’interface.
 
 ##  Objectif
 
@@ -48,24 +47,15 @@ pip install pillow
    pip install pillow
    ```
 
-3. **V1 (Terminal)** :
-
-   ```bash
-   python3 game.py
-   ```
-
-   - Suit les invites textuelles pour placer et déplacer.
-   - Compte le nombre de coups nécessaires.
-
-4. **V2 (Graphique)** :
+3. Lancer l’interface graphique :
 
    ```bash
    python3 piege.py
    ```
 
-   - Interface interactive dans une fenêtre FLTK.
-   - Clic gauche pour tirer, clic droit pour pousser.
-   - Dernier joueur à garder au moins une bille gagne.
+   Les joueurs placent d’abord leurs billes. Pendant la phase des tirettes, le clic gauche tire et le clic droit pousse. Le dernier joueur à conserver une bille gagne.
+
+`game.py` contient les structures et règles utilisées par l’interface ; son exécution seule ne lance pas une partie interactive.
 
 ##  Documentation & Rapport
 
@@ -91,7 +81,7 @@ Forkez le dépôt, apportez vos améliorations et proposez une Pull Request.
 
 ##  Licence
 
-Ce projet est libre, à adapter selon votre contexte (MIT, GPL, …).
+Le dépôt ne contient pas de fichier de licence explicite.
 
 ---
 
