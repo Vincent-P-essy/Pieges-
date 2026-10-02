@@ -1,0 +1,76 @@
+$ python -c import random; random.seed(42); from game import Plateau; p=Plateau(); assert len(p.trous)==2 and all(len(row)==49 for row in p.trous); print('Board: 7 x 7; 14 initialized sliders'); print('Open holes:', sum(a and b for a,b in zip(*p.trous)))
+Tirette n°0 a les trous : [0, 1, 2, 6]
+Tirette n°1 a les trous : [0, 1, 2, 3, 4, 5, 6]
+Tirette n°2 a les trous : [0, 1, 2, 4]
+Tirette n°3 a les trous : [0, 1, 3, 4, 5]
+Tirette n°4 a les trous : [0, 3, 5, 6]
+Tirette n°5 a les trous : [1, 3, 5, 6]
+Tirette n°6 a les trous : [0, 1, 2, 3, 4, 5, 6]
+Tirette n°7 a les trous : [0, 1, 2, 4, 5, 6]
+Tirette n°8 a les trous : [1, 2, 4, 5]
+Tirette n°9 a les trous : [2, 3, 4, 5, 6]
+Tirette n°10 a les trous : [2, 4, 6]
+Tirette n°11 a les trous : [0, 1, 2, 3, 4, 6]
+Tirette n°12 a les trous : [0, 2, 3, 4, 5, 6]
+Tirette n°13 a les trous : [1, 2, 3, 5]
+Liste trous communs
+(0, 0)
+(1, 0)
+(1, 1)
+(1, 4)
+(1, 6)
+(2, 0)
+(2, 1)
+(2, 2)
+(2, 4)
+(3, 4)
+(3, 5)
+(4, 0)
+(4, 3)
+(4, 5)
+(5, 1)
+(5, 5)
+(5, 6)
+(6, 0)
+(6, 2)
+(6, 3)
+(6, 4)
+(6, 5)
+Liste trous partiels horizontaux
+(0, 4)
+(0, 5)
+(2, 3)
+(2, 5)
+(2, 6)
+(3, 2)
+(3, 6)
+(4, 1)
+(4, 2)
+(4, 4)
+(5, 0)
+(5, 2)
+Liste trous partiels verticaux
+(0, 1)
+(0, 2)
+(0, 6)
+(1, 2)
+(1, 3)
+(1, 5)
+(3, 0)
+(3, 1)
+(3, 3)
+(4, 6)
+(5, 3)
+(6, 1)
+(6, 6)
+Board: 7 x 7; 14 initialized sliders
+Open holes: 22
+
+Exit: 0
+
+$ xvfb-run -a python docs/examples/capture-game.py
+Bibliothèque PIL chargée.
+Bibliothèque PIL chargée.
+Captured the running game: docs/screenshots/game.png
+
+Exit: 0

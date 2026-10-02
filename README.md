@@ -3,6 +3,16 @@
 Projet de jeu de stratégie multi-joueur « Pièges ! » (Stay Alive!)  
 Développé en Python dans le cadre du TP/DM sur les interfaces texte et graphique.
 
+<!-- execution-capture -->
+## Execution preview
+
+![Pieges-](docs/screenshots/game.png)
+
+![Pieges-](docs/screenshots/execution.png)
+
+The actual seeded game board logic, followed by a headless start of the Tk interface. This checks rendering and board initialization, not a complete multiplayer match. [Verification](docs/verification.md).
+<!-- /execution-capture -->
+
 ##  Objectif
 
 - **V1 (Terminal)** : version solo, calcul de coups pour éliminer toutes les billes.
